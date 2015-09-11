@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay PUBLIC "-//MOZILLA//DTD XUL V1.0//EN" "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<overlay id="overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="chrome://gitbranchextension/content/gitbranch.js" />
+  <statusbar id="statusbarviewbox">
+    <statusbarpanel id="gitbranch"
+                    class="gitbranch"
+                    insertbefore="statusbar-checker"
+                    style="min-width: 6em; margin-top: 5px;"
+                    hidden="false"/>
+  </statusbar>
+</overlay>

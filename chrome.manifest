@@ -1,0 +1,7 @@
+
+content gitbranchextension jar:gitbranch_extension.jar!/content/
+skin gitbranchextension classic/1.0 jar:gitbranch_extension.jar!/skin/
+locale gitbranchextension en-US jar:gitbranch_extension.jar!/locale/en-US/
+
+
+overlay chrome://komodo/content/komodo.xul chrome://gitbranchextension/content/gitbranchextension_overlay.xul
