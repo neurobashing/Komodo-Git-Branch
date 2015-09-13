@@ -8,7 +8,10 @@
     <statusbarpanel id="gitbranch"
                     class="gitbranch"
                     insertbefore="statusbar-checker"
-                    style="min-width: 6em; margin-top: 5px;"
-                    hidden="false"/>
+                    style="min-width: 6em">
+        <label id="gitbranch-text"
+                class="statusbarpanel-text"
+               crop="right" flex="1" />
+    </statusbarpanel>
   </statusbar>
 </overlay>
