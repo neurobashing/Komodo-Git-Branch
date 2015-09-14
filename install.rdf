@@ -4,7 +4,7 @@
     <Description about="urn:mozilla:install-manifest">
         <em:id>gitbranch_extension@neurobashing.com</em:id>
         <em:name>gitbranch_extension</em:name>
-        <em:version>0.3</em:version>
+        <em:version>0.4</em:version>
         <em:description>Shows the current git branch</em:description>
         <em:creator>gregg@neurobashing.com</em:creator>
         <em:homepageURL>http://neurobashing.com</em:homepageURL>
