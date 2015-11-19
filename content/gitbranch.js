@@ -20,14 +20,11 @@ ko.extensions.gitbranch = {};
     };
     this.CurrentViewChanged = function() {
         var shell = require('ko/shell');
-        var koFile = require("ko/file");
-        // you can't do this:
-        //var file = require('ko/file');
         //log.debug("Current view changed.");
         var project = ko.projects.manager.currentProject;
         if (project && project.url) {
             //log.debug("We have a project path, finding git branch");
-            var project_path = koFile.dirname(ko.uriparse.URIToPath(project.url));
+            var project_path = project.liveDirectory;
             // log.debug("project_path is " + project_path);
             var commandname = "git --git-dir=" + project_path + "/.git --work-tree=" + project_path + " rev-parse --abbrev-ref HEAD";
             // log.debug("command to run is " + commandname);
